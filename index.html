@@ -1,173 +1,56 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Punto de Venta | Mi Tiendita</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        :root { --magenta-pos: #d81b60; }
-        .bg-magenta { background-color: var(--magenta-pos); }
-        .text-magenta { color: var(--magenta-pos); }
-        .btn-hover:hover { transform: scale(1.03); transition: 0.3s; }
-        html { scroll-behavior: smooth; }
-    </style>
-</head>
-<body class="bg-gray-50 text-gray-800 font-sans">
-
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <img src="Logo.png" alt="Logo" class="h-12">
-            <div class="hidden md:flex space-x-8 font-bold uppercase text-sm">
-                <a href="#inicio" class="hover:text-magenta transition">Inicio</a>
-                <a href="#testimonios" class="hover:text-magenta transition">La banda recomienda</a>
-                <a href="#software-medida" class="hover:text-magenta transition">Software</a>
-                <a href="#videos" class="hover:text-magenta transition">Videos</a>
-                <a href="#demos" class="hover:text-magenta transition">Demos</a>
-            </div>
-            <a href="https://wa.me/529519231764" target="_blank" rel="noopener noreferrer" class="bg-magenta text-white px-6 py-2 rounded-full font-bold btn-hover shadow-lg text-sm uppercase text-center">Contacto</a>
-        </div>
-    </nav>
-
-    <section id="inicio" class="py-16 bg-white">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
-            <div class="md:w-1/2">
-                <h1 class="text-5xl font-extrabold leading-tight mb-6 text-gray-900">¡Ya no te hagas bolas con las cuentas! <span class="text-magenta">Controla todo hoy.</span></h1>
-                <p class="text-lg text-gray-600 mb-8 leading-relaxed italic uppercase tracking-tighter font-bold">Tecnología de la buena para tu negocio.</p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="#demos" class="bg-gray-900 text-white px-8 py-3 rounded-lg font-bold btn-hover uppercase shadow-md">Bajar Demo</a>
-                </div>
-            </div>
-            <div class="md:w-1/2">
-                <img src="Pantalla_general.png" alt="Pantalla General" class="rounded-xl shadow-2xl border-4 border-gray-100">
-            </div>
-        </div>
-    </section>
-
-    <section id="testimonios" class="py-20 bg-gray-50">
+<section id="precios" class="py-20 bg-gray-100">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-16 uppercase tracking-tighter text-gray-900">¿Qué dice la raza del software?</h2>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
-                <div class="bg-white p-6 rounded-xl shadow border-b-4 border-magenta btn-hover">
-                    <p class="text-gray-700 italic mb-4 text-sm">"¡A la mecha! Antes me tardaba un buen haciendo el corte y ahora sale de volada. ¡Está bien chido!"</p>
-                    <p class="font-bold text-xs uppercase text-magenta">Abarrotes "El Güero"</p>
-                </div>
-
-                <div class="bg-white p-6 rounded-xl shadow border-b-4 border-magenta btn-hover">
-                    <p class="text-gray-700 italic mb-4 text-sm">"Ya no me pican los ojos con la mercancía. Sé qué falta sin andar contando todo el día. ¡Súper recomendado!"</p>
-                    <p class="font-bold text-xs uppercase text-magenta">Papelería San Judas</p>
-                </div>
-
-                <div class="bg-white p-6 rounded-xl shadow border-b-4 border-magenta btn-hover">
-                    <p class="text-gray-700 italic mb-4 text-sm">"No es por nada, pero con este programa el negocio se ve más pro. Los clientes hasta se sacan de onda de lo rápido que cobro."</p>
-                    <p class="font-bold text-xs uppercase text-magenta">Tacos "Don Chuy"</p>
-                </div>
-
-                <div class="bg-white p-6 rounded-xl shadow border-b-4 border-magenta btn-hover">
-                    <p class="text-gray-700 italic mb-4 text-sm">"¡Neta que sí funciona! Al principio le dudé, pero el compa de Mi Tiendita me explicó todo bien chido."</p>
-                    <p class="font-bold text-xs uppercase text-magenta">Cremería La Reina</p>
-                </div>
-
-                <div class="bg-white p-6 rounded-xl shadow border-b-4 border-magenta btn-hover">
-                    <p class="text-gray-700 italic mb-4 text-sm">"Estaba bien harto de que no me cuadrara el dinero. Con este software ya no se me escapa ni un peso. ¡De lujo!"</p>
-                    <p class="font-bold text-xs uppercase text-magenta">Farmacia La Bendición</p>
-                </div>
-
-                <div class="bg-white p-6 rounded-xl shadow border-b-4 border-magenta btn-hover">
-                    <p class="text-gray-700 italic mb-4 text-sm">"¡Qué onda con lo fácil que es! Mi mamá que no le sabe al cel ya aprendió a cobrar solita. ¡Está con madre!"</p>
-                    <p class="font-bold text-xs uppercase text-magenta">Miscelánea Lupita</p>
-                </div>
-
-                <div class="bg-white p-6 rounded-xl shadow border-b-4 border-magenta btn-hover">
-                    <p class="text-gray-700 italic mb-4 text-sm">"Aguanta un buen, la neta. Tenía miedo que se trabara pero jala bien suave en mi compu viejita."</p>
-                    <p class="font-bold text-xs uppercase text-magenta">Tlapalería García</p>
-                </div>
-
-                <div class="bg-white p-6 rounded-xl shadow border-b-4 border-magenta btn-hover">
-                    <p class="text-gray-700 italic mb-4 text-sm">"Ya no ando con el pendiente de qué hay en bodega. El sistema me avisa y así no me quedo sin nada. ¡Pura calidad!"</p>
-                    <p class="font-bold text-xs uppercase text-magenta">Refaccionaria El Rayo</p>
-                </div>
-
-                <div class="bg-white p-6 rounded-xl shadow border-b-4 border-magenta btn-hover">
-                    <p class="text-gray-700 italic mb-4 text-sm">"¡Qué elegancia la de Francia! El ticket sale bien bonito y los clientes ven que aquí sí hay orden. ¡Anímense!"</p>
-                    <p class="font-bold text-xs uppercase text-magenta">Zapatería Hidalgo</p>
-                </div>
-
-                <div class="bg-white p-6 rounded-xl shadow border-b-4 border-magenta btn-hover">
-                    <p class="text-gray-700 italic mb-4 text-sm">"La neta me ahorró un buen de corajes. Todo bien organizado y fácil. ¡Cinco estrellas al compa!"</p>
-                    <p class="font-bold text-xs uppercase text-magenta">Tienda El Porvenir</p>
+            <div class="max-w-4xl mx-auto mb-10 bg-blue-50 border-l-8 border-blue-500 p-6 rounded-r-2xl shadow-sm">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-info-circle text-blue-500 text-3xl"></i>
+                    </div>
+                    <div class="ml-5">
+                        <h3 class="text-blue-800 font-extrabold uppercase tracking-tight text-lg">🎁 ¡Pruébalo sin compromiso!</h3>
+                        <p class="text-blue-700 leading-relaxed">
+                            Descarga la **Versión Básica** y disfruta de hasta <span class="font-black">40 días de uso gratuito</span>. Tómate el tiempo para conocer el sistema y adaptarlo al ritmo de tu negocio antes de comprar.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="videos" class="py-20 bg-gray-100">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-12 uppercase">Tutoriales Rápidos</h2>
+            <h2 class="text-4xl font-bold text-center mb-4 uppercase tracking-tighter">Elige tu versión</h2>
+            <p class="text-center text-gray-600 mb-16 italic text-lg">Invierte en el orden de tu negocio hoy mismo.</p>
+            
             <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <a href="https://www.youtube.com/watch?v=F6vqRnczn6o" target="_blank" class="bg-white p-10 rounded-2xl shadow-lg border-b-8 border-red-600 btn-hover group">
-                    <i class="fab fa-youtube text-red-600 text-6xl mb-4 group-hover:scale-110 transition"></i>
-                    <h3 class="font-bold text-xl mb-2 text-gray-800">YouTube</h3>
-                    <span class="text-red-600 font-bold underline italic">Click para abrir &rarr;</span>
-                </a>
-                <a href="https://www.tiktok.com/@elprofe_chan/video/7626433229385420053" target="_blank" class="bg-white p-10 rounded-2xl shadow-lg border-b-8 border-black btn-hover group">
-                    <i class="fab fa-tiktok text-black text-6xl mb-4 group-hover:scale-110 transition"></i>
-                    <h3 class="font-bold text-xl mb-2 text-gray-800">TikTok</h3>
-                    <span class="text-black font-bold underline italic">Click para abrir &rarr;</span>
-                </a>
-            </div>
-        </div>
-    </section>
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-t-8 border-gray-400 btn-hover relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-gray-200 text-gray-700 px-4 py-1 text-xs font-bold uppercase rounded-bl-lg">
+                        40 Días Gratis
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold mb-2">VERSIÓN BÁSICA</h3>
+                    <p class="text-gray-500 mb-6">La solución ideal para empezar a organizar tus ventas.</p>
+                    <ul class="mb-8 space-y-3">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Ventas Rápidas y Tickets</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Inventario y Existencias</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Corte de Caja diario</li>
+                        <li class="font-bold text-blue-600"><i class="fas fa-gift mr-2"></i> 40 días de prueba full</li>
+                    </ul>
+                    <a href="https://mpago.la/26HktC5" target="_blank" class="block w-full text-center bg-gray-800 text-white py-4 rounded-lg font-bold uppercase hover:bg-black transition shadow-md">
+                        Comprar Licencia Vitalicia
+                    </a>
+                </div>
 
-    <section id="software-medida" class="py-20 bg-white border-t">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
-            <div class="md:w-1/2">
-                <img src="Reportes.png" alt="Reportes" class="rounded-lg shadow-xl">
-            </div>
-            <div class="md:w-1/2">
-                <h2 class="text-4xl font-bold mb-6 italic text-magenta">Software a la medida</h2>
-                <p class="text-gray-600 mb-8 text-xl leading-relaxed">"Si necesitas algo más pro, le metemos mano para que te quede al cien."</p>
-                <a href="https://wa.me/529519231764" target="_blank" rel="noopener noreferrer" class="inline-block bg-magenta text-white px-10 py-4 rounded-full font-bold shadow-lg btn-hover text-lg text-center">Mándame mensaje</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="demos" class="py-20 bg-gray-900 text-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold mb-12 uppercase tracking-widest">Descargas</h2>
-            <div class="max-w-md mx-auto">
-                <div class="bg-white text-gray-800 p-10 rounded-2xl shadow-lg border-b-8 border-magenta btn-hover">
-                    <h3 class="text-2xl font-bold mb-2 uppercase">Versión Básica</h3>
-                    <p class="text-magenta font-bold mb-8 italic text-xl uppercase italic">¡Pruébalo ya!</p>
-                    <a href="Instalador_Basico.rar" download class="block w-full bg-magenta text-white py-4 rounded-lg font-bold uppercase shadow-lg text-center hover:bg-pink-700 transition">
-                        <i class="fas fa-download mr-2"></i> Bajar Instalador
+                <div class="bg-white p-8 rounded-2xl shadow-xl card-popular btn-hover">
+                    <div class="badge-popular">Más Recomendado</div>
+                    <h3 class="text-2xl font-bold mb-2 text-magenta">VERSIÓN PRO</h3>
+                    <p class="text-gray-500 mb-6">El control total que los negocios grandes exigen.</p>
+                    <ul class="mb-8 space-y-3 font-medium">
+                        <li><i class="fas fa-check text-magenta mr-2"></i> Todo lo de la versión Básica</li>
+                        <li><i class="fas fa-check text-magenta mr-2"></i> Reportes de Utilidades</li>
+                        <li><i class="fas fa-check text-magenta mr-2"></i> Control de Empleados y Turnos</li>
+                        <li><i class="fas fa-check text-magenta mr-2"></i> Soporte Técnico Prioritario</li>
+                    </ul>
+                    <a href="https://mpago.la/2AS9kF1" target="_blank" class="block w-full text-center bg-magenta text-white py-4 rounded-lg font-bold uppercase hover:bg-pink-700 transition shadow-lg">
+                        Pagar versión PRO 🚀
                     </a>
                 </div>
             </div>
         </div>
     </section>
-
-    <footer class="bg-white border-t py-12">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-8">
-            <div>
-                <h4 class="font-bold text-xl mb-2 italic">Métodos de Pago</h4>
-                <p class="text-gray-600 uppercase">Transferencias y Depósitos en <span class="font-bold text-red-600 uppercase tracking-tighter">OXXO</span>.</p>
-            </div>
-            <div class="flex flex-col items-center md:items-end">
-                <h4 class="font-bold text-lg mb-2 italic text-magenta uppercase tracking-tighter">soportetecnico.pcfacil@gmail.com</h4>
-                <a href="https://wa.me/529519231764" target="_blank" rel="noopener noreferrer" class="text-gray-800 font-bold text-lg hover:text-green-600 transition flex items-center gap-2">
-                    <i class="fab fa-whatsapp text-2xl text-green-500"></i>
-                    <span>951 923 1764</span>
-                </a>
-            </div>
-        </div>
-    </footer>
-
-    <a href="https://wa.me/529519231764" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl z-50 hover:bg-green-600 transition">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-</body>
-</html>
