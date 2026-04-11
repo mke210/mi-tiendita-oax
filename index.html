@@ -12,6 +12,8 @@
         .text-magenta { color: var(--magenta-pos); }
         .btn-hover:hover { transform: scale(1.03); transition: 0.3s; }
         html { scroll-behavior: smooth; }
+        .mp-btn { background-color: #00b1ea; }
+        .mp-btn:hover { background-color: #0095c8; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
@@ -22,6 +24,7 @@
             <div class="hidden md:flex space-x-8 font-bold uppercase text-sm">
                 <a href="#inicio" class="hover:text-magenta transition">Inicio</a>
                 <a href="#software-medida" class="hover:text-magenta transition">Software a la medida</a>
+                <a href="#testimonios" class="hover:text-magenta transition">Opiniones</a>
                 <a href="#videos" class="hover:text-magenta transition">Videos</a>
                 <a href="#demos" class="hover:text-magenta transition">Demos</a>
             </div>
@@ -41,6 +44,30 @@
             </div>
             <div class="md:w-1/2">
                 <img src="Pantalla_general.png" alt="Pantalla General" class="rounded-xl shadow-2xl border-4 border-gray-100">
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-4 uppercase text-center">Lo que dicen los clientes</h2>
+            <p class="text-center text-gray-600 mb-12 italic">Comerciantes mexicanos que ya echaron a andar su negocio con nosotros</p>
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-lg border-t-4 border-magenta">
+                    <div class="text-yellow-400 text-xl mb-3">★★★★★</div>
+                    <p class="text-gray-700 italic mb-4">"Neta que me sacó de un apuro. Antes andaba con mis cuentas en un cuaderno y era un desmadre. Ahora ya sé qué se vende, qué no, y hasta cuándo me toca surtir. ¡Un pantallazo y listo!"</p>
+                    <p class="font-bold text-magenta">— Doña Lupita, Abarrotes "La Esquina"</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-lg border-t-4 border-magenta">
+                    <div class="text-yellow-400 text-xl mb-3">★★★★★</div>
+                    <p class="text-gray-700 italic mb-4">"Está bien chido el sistema, la mera verdad. Lo instalé en mi tiendita y en chinga aprendí a usarlo. El muchacho que lo hizo te atiende rebién por WhatsApp, no te deja colgado."</p>
+                    <p class="font-bold text-magenta">— Don Beto, Papelería "El Lápiz Feliz"</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-lg border-t-4 border-magenta">
+                    <div class="text-yellow-400 text-xl mb-3">★★★★★</div>
+                    <p class="text-gray-700 italic mb-4">"A todo dar, en serio. Me ahorró un chorro de tiempo en los cortes de caja. Ya no batallo con la calculadora ni ando adivinando cuánto vendí. ¡Recomendadísimo, paisanos!"</p>
+                    <p class="font-bold text-magenta">— Sra. Carmen, Miscelánea "Los Tres Hermanos"</p>
+                </div>
             </div>
         </div>
     </section>
@@ -78,12 +105,26 @@
 
     <section id="demos" class="py-20 bg-gray-900 text-white">
         <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold mb-12 uppercase tracking-widest">Descargas</h2>
-            <div class="max-w-md mx-auto">
+            <h2 class="text-4xl font-bold mb-12 uppercase tracking-widest">Descargas y Pago</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
                 <div class="bg-white text-gray-800 p-10 rounded-2xl shadow-lg border-4 border-magenta">
                     <h3 class="text-2xl font-bold mb-2">Versión PRO</h3>
                     <p class="text-magenta font-bold mb-6 italic text-xl">30 DÍAS GRATIS</p>
-                    <button class="w-full bg-magenta text-white py-4 rounded-lg font-bold btn-hover uppercase shadow-lg">Descargar Instalador</button>
+                    <a href="https://github.com/mke210/mi-tiendita-oax/raw/main/Instalador_PRO.rar" class="block w-full bg-magenta text-white py-4 rounded-lg font-bold btn-hover uppercase shadow-lg mb-4">Descargar Instalador</a>
+                    <a href="https://mpago.la/2AS9kF1" target="_blank" class="block w-full mp-btn text-white py-4 rounded-lg font-bold btn-hover shadow-lg">
+                        <img src="https://http2.mlstatic.com/static/org-img/homesnw/mercado-pago.png?v=2.0" alt="Mercado Pago" class="inline h-6 mr-2 bg-white p-1 rounded"> Pagar Versión PRO
+                    </a>
+                    <p class="mt-4 text-xs text-gray-500 italic">Compatible con Windows 10 e inferiores.</p>
+                </div>
+
+                <div class="bg-white text-gray-800 p-10 rounded-2xl shadow-lg border-4 border-gray-400">
+                    <h3 class="text-2xl font-bold mb-2">Versión Básica</h3>
+                    <p class="text-gray-600 font-bold mb-6 italic text-xl">IDEAL PARA EMPEZAR</p>
+                    <a href="https://github.com/mke210/mi-tiendita-oax/raw/main/Instalador_Basico.rar" class="block w-full bg-gray-800 text-white py-4 rounded-lg font-bold btn-hover uppercase shadow-lg mb-4">Descargar Instalador</a>
+                    <a href="https://mpago.la/26HktC5" target="_blank" class="block w-full mp-btn text-white py-4 rounded-lg font-bold btn-hover shadow-lg">
+                        <img src="https://http2.mlstatic.com/static/org-img/homesnw/mercado-pago.png?v=2.0" alt="Mercado Pago" class="inline h-6 mr-2 bg-white p-1 rounded"> Pagar Versión Básica
+                    </a>
                     <p class="mt-4 text-xs text-gray-500 italic">Compatible con Windows 10 e inferiores.</p>
                 </div>
             </div>
@@ -94,7 +135,8 @@
         <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-8">
             <div>
                 <h4 class="font-bold text-xl mb-2 italic">Métodos de Pago</h4>
-                <p class="text-gray-600 font-bold uppercase">Transferencias y OXXO</p>
+                <p class="text-gray-600 font-bold uppercase">Mercado Pago, Transferencias y OXXO</p>
+                <img src="https://http2.mlstatic.com/static/org-img/homesnw/mercado-pago.png?v=2.0" alt="Mercado Pago" class="h-8 mt-2">
             </div>
             <div class="flex flex-col items-center md:items-end">
                 <a href="https://wa.me/9519231764" target="_blank" class="bg-green-500 text-white px-8 py-4 rounded-full font-bold shadow-xl flex items-center gap-3 btn-hover">
