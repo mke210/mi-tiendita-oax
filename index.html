@@ -1,154 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Punto de Venta | Mi Tiendita</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        :root { --magenta-pos: #d81b60; }
-        .bg-magenta { background-color: var(--magenta-pos); }
-        .text-magenta { color: var(--magenta-pos); }
-        .btn-hover:hover { transform: scale(1.03); transition: 0.3s; }
-        html { scroll-behavior: smooth; }
-        .mp-btn { background-color: #00b1ea; }
-        .mp-btn:hover { background-color: #0095c8; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Punto de Venta | Mi Tiendita</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+:root{--m:#d81b60}.bg-magenta{background:#d81b60}.text-magenta{color:#d81b60}.btn-hover:hover{transform:scale(1.03);transition:.3s}html{scroll-behavior:smooth}.mp{background:#00b1ea}.mp:hover{background:#0095c8}
+</style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
 
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <img src="Logo.png" alt="Logo" class="h-12">
-            <div class="hidden md:flex space-x-8 font-bold uppercase text-sm">
-                <a href="#inicio" class="hover:text-magenta transition">Inicio</a>
-                <a href="#software-medida" class="hover:text-magenta transition">Software a la medida</a>
-                <a href="#testimonios" class="hover:text-magenta transition">Opiniones</a>
-                <a href="#videos" class="hover:text-magenta transition">Videos</a>
-                <a href="#demos" class="hover:text-magenta transition">Demos</a>
-            </div>
-            <a href="https://wa.me/9519231764" target="_blank" class="bg-magenta text-white px-6 py-2 rounded-full font-bold btn-hover shadow-lg text-sm uppercase">Contacto</a>
-        </div>
-    </nav>
+<nav class="bg-white shadow-md sticky top-0 z-50">
+<div class="container mx-auto px-6 py-4 flex justify-between items-center">
+<img src="Logo.png" alt="Logo" class="h-12">
+<div class="hidden md:flex space-x-6 font-bold uppercase text-sm">
+<a href="#inicio" class="hover:text-magenta">Inicio</a>
+<a href="#software" class="hover:text-magenta">Software</a>
+<a href="#galeria" class="hover:text-magenta">Galería</a>
+<a href="#testimonios" class="hover:text-magenta">Opiniones</a>
+<a href="#videos" class="hover:text-magenta">Videos</a>
+<a href="#demos" class="hover:text-magenta">Demos</a>
+</div>
+<a href="https://wa.me/9519231764" target="_blank" class="bg-magenta text-white px-6 py-2 rounded-full font-bold btn-hover shadow-lg text-sm uppercase">Contacto</a>
+</div>
+</nav>
 
-    <section id="inicio" class="py-16 bg-white">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
-            <div class="md:w-1/2">
-                <h1 class="text-5xl font-extrabold leading-tight mb-6">Toma el control de tu negocio <span class="text-magenta">hoy mismo</span>.</h1>
-                <p class="text-lg text-gray-600 mb-8 leading-relaxed italic">Tecnología diseñada para la eficiencia de tu comercio.</p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="#demos" class="bg-gray-900 text-white px-8 py-3 rounded-lg font-bold btn-hover uppercase">Ver Demos</a>
-                    <a href="https://wa.me/9519231764" target="_blank" class="border-2 border-magenta text-magenta px-8 py-3 rounded-lg font-bold btn-hover italic text-sm md:text-base">WhatsApp Directo</a>
-                </div>
-            </div>
-            <div class="md:w-1/2">
-                <img src="Pantalla_general.png" alt="Pantalla General" class="rounded-xl shadow-2xl border-4 border-gray-100">
-            </div>
-        </div>
-    </section>
+<section id="inicio" class="py-16 bg-white">
+<div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-1/2">
+<h1 class="text-5xl font-extrabold mb-6">Toma el control de tu negocio <span class="text-magenta">hoy mismo</span>.</h1>
+<p class="text-lg text-gray-600 mb-8 italic">Tecnología diseñada para la eficiencia de tu comercio.</p>
+<div class="flex flex-wrap gap-4">
+<a href="#demos" class="bg-gray-900 text-white px-8 py-3 rounded-lg font-bold btn-hover uppercase">Ver Demos</a>
+<a href="https://wa.me/9519231764" target="_blank" class="border-2 border-magenta text-magenta px-8 py-3 rounded-lg font-bold btn-hover italic">WhatsApp</a>
+</div>
+</div>
+<div class="md:w-1/2"><img src="Pantalla_general.png" class="rounded-xl shadow-2xl border-4 border-gray-100"></div>
+</div>
+</section>
 
-    <section id="testimonios" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-4 uppercase text-center">Lo que dicen los clientes</h2>
-            <p class="text-center text-gray-600 mb-12 italic">Comerciantes mexicanos que ya echaron a andar su negocio con nosotros</p>
-            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <div class="bg-gray-50 p-8 rounded-2xl shadow-lg border-t-4 border-magenta">
-                    <div class="text-yellow-400 text-xl mb-3">★★★★★</div>
-                    <p class="text-gray-700 italic mb-4">"Neta que me sacó de un apuro. Antes andaba con mis cuentas en un cuaderno y era un desmadre. Ahora ya sé qué se vende, qué no, y hasta cuándo me toca surtir. ¡Un pantallazo y listo!"</p>
-                    <p class="font-bold text-magenta">— Doña Lupita, Abarrotes "La Esquina"</p>
-                </div>
-                <div class="bg-gray-50 p-8 rounded-2xl shadow-lg border-t-4 border-magenta">
-                    <div class="text-yellow-400 text-xl mb-3">★★★★★</div>
-                    <p class="text-gray-700 italic mb-4">"Está bien chido el sistema, la mera verdad. Lo instalé en mi tiendita y en chinga aprendí a usarlo. El muchacho que lo hizo te atiende rebién por WhatsApp, no te deja colgado."</p>
-                    <p class="font-bold text-magenta">— Don Beto, Papelería "El Lápiz Feliz"</p>
-                </div>
-                <div class="bg-gray-50 p-8 rounded-2xl shadow-lg border-t-4 border-magenta">
-                    <div class="text-yellow-400 text-xl mb-3">★★★★★</div>
-                    <p class="text-gray-700 italic mb-4">"A todo dar, en serio. Me ahorró un chorro de tiempo en los cortes de caja. Ya no batallo con la calculadora ni ando adivinando cuánto vendí. ¡Recomendadísimo, paisanos!"</p>
-                    <p class="font-bold text-magenta">— Sra. Carmen, Miscelánea "Los Tres Hermanos"</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="galeria" class="py-20 bg-gray-100">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold mb-4 uppercase text-center">Comerciantes usando <span class="text-magenta">Mi Tiendita</span></h2>
+<p class="text-center text-gray-600 mb-12 italic">Negocios reales que ya le entraron al sistema</p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+<div class="rounded-2xl shadow-lg btn-hover bg-white overflow-hidden"><img src="cliente1.jpeg" class="w-full h-64 object-cover"><div class="p-4"><p class="font-bold text-magenta">Papelería</p><p class="text-sm text-gray-600 italic">"Atención con una sonrisa"</p></div></div>
+<div class="rounded-2xl shadow-lg btn-hover bg-white overflow-hidden"><img src="cliente2.jpeg" class="w-full h-64 object-cover"><div class="p-4"><p class="font-bold text-magenta">Especias y Moles</p><p class="text-sm text-gray-600 italic">"¡Pulgar arriba!"</p></div></div>
+<div class="rounded-2xl shadow-lg btn-hover bg-white overflow-hidden"><img src="cliente3.jpeg" class="w-full h-64 object-cover"><div class="p-4"><p class="font-bold text-magenta">Abarrotes</p><p class="text-sm text-gray-600 italic">"Fácil hasta para la abuela"</p></div></div>
+<div class="rounded-2xl shadow-lg btn-hover bg-white overflow-hidden"><img src="cliente4.jpeg" class="w-full h-64 object-cover"><div class="p-4"><p class="font-bold text-magenta">Frutería</p><p class="text-sm text-gray-600 italic">"Don Pepe ya controla todo"</p></div></div>
+</div>
+</div>
+</section>
 
-    <section id="videos" class="py-20 bg-gray-100">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-12 uppercase">Tutoriales Rápidos</h2>
-            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <a href="https://www.youtube.com/watch?v=F6vqRnczn6o" target="_blank" class="bg-white p-10 rounded-2xl shadow-lg border-b-8 border-red-600 btn-hover group">
-                    <i class="fab fa-youtube text-red-600 text-6xl mb-4 group-hover:scale-110 transition"></i>
-                    <h3 class="font-bold text-xl mb-2">Video en YouTube</h3>
-                    <span class="text-red-600 font-bold underline">Ver ahora &rarr;</span>
-                </a>
-                <a href="https://www.tiktok.com/@elprofe_chan/video/7626433229385420053" target="_blank" class="bg-white p-10 rounded-2xl shadow-lg border-b-8 border-black btn-hover group">
-                    <i class="fab fa-tiktok text-black text-6xl mb-4 group-hover:scale-110 transition"></i>
-                    <h3 class="font-bold text-xl mb-2">Video en TikTok</h3>
-                    <span class="text-black font-bold underline">Ver ahora &rarr;</span>
-                </a>
-            </div>
-        </div>
-    </section>
+<section id="testimonios" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold mb-12 uppercase text-center">Lo que dicen los clientes</h2>
+<div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+<div class="bg-gray-50 p-8 rounded-2xl shadow-lg border-t-4 border-magenta"><div class="text-yellow-400 mb-3">★★★★★</div><p class="text-gray-700 italic mb-4">"Neta me sacó de un apuro. Antes andaba con cuentas en cuaderno, era un desmadre. Ahora un pantallazo y listo!"</p><p class="font-bold text-magenta">— Doña Lupita</p></div>
+<div class="bg-gray-50 p-8 rounded-2xl shadow-lg border-t-4 border-magenta"><div class="text-yellow-400 mb-3">★★★★★</div><p class="text-gray-700 italic mb-4">"Está bien chido el sistema. En chinga aprendí. El muchacho te atiende rebién por WhatsApp, no te deja colgado."</p><p class="font-bold text-magenta">— Don Beto</p></div>
+<div class="bg-gray-50 p-8 rounded-2xl shadow-lg border-t-4 border-magenta"><div class="text-yellow-400 mb-3">★★★★★</div><p class="text-gray-700 italic mb-4">"A todo dar. Me ahorró un chorro de tiempo en cortes de caja. ¡Recomendadísimo, paisanos!"</p><p class="font-bold text-magenta">— Sra. Carmen</p></div>
+</div>
+</div>
+</section>
 
-    <section id="software-medida" class="py-20 bg-white">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
-            <div class="md:w-1/2">
-                <img src="Reportes.png" alt="Módulo de Reportes" class="rounded-lg shadow-xl">
-            </div>
-            <div class="md:w-1/2">
-                <h2 class="text-4xl font-bold mb-6 italic text-magenta">Software a la medida</h2>
-                <p class="text-gray-600 mb-8 text-xl leading-relaxed">"Desarrollamos módulos específicos para tus necesidades exactas."</p>
-                <a href="https://wa.me/9519231764" target="_blank" class="inline-block bg-magenta text-white px-10 py-4 rounded-full font-bold shadow-lg btn-hover text-lg">Cotizar Proyecto</a>
-            </div>
-        </div>
-    </section>
+<section id="videos" class="py-20 bg-gray-100">
+<div class="container mx-auto px-6 text-center">
+<h2 class="text-3xl font-bold mb-12 uppercase">Tutoriales</h2>
+<div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+<a href="https://www.youtube.com/watch?v=F6vqRnczn6o" target="_blank" class="bg-white p-10 rounded-2xl shadow-lg border-b-8 border-red-600 btn-hover"><i class="fab fa-youtube text-red-600 text-6xl mb-4"></i><h3 class="font-bold text-xl">YouTube</h3></a>
+<a href="https://www.tiktok.com/@elprofe_chan/video/7626433229385420053" target="_blank" class="bg-white p-10 rounded-2xl shadow-lg border-b-8 border-black btn-hover"><i class="fab fa-tiktok text-black text-6xl mb-4"></i><h3 class="font-bold text-xl">TikTok</h3></a>
+</div>
+</div>
+</section>
 
-    <section id="demos" class="py-20 bg-gray-900 text-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold mb-12 uppercase tracking-widest">Descargas y Pago</h2>
-            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+<section id="software" class="py-20 bg-white">
+<div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
+<div class="md:w-1/2"><img src="Reportes.png" class="rounded-lg shadow-xl"></div>
+<div class="md:w-1/2">
+<h2 class="text-4xl font-bold mb-6 italic text-magenta">Software a la medida</h2>
+<p class="text-gray-600 mb-8 text-xl">"Desarrollamos módulos específicos para tus necesidades."</p>
+<a href="https://wa.me/9519231764" target="_blank" class="inline-block bg-magenta text-white px-10 py-4 rounded-full font-bold shadow-lg btn-hover text-lg">Cotizar</a>
+</div>
+</div>
+</section>
 
-                <div class="bg-white text-gray-800 p-10 rounded-2xl shadow-lg border-4 border-magenta">
-                    <h3 class="text-2xl font-bold mb-2">Versión PRO</h3>
-                    <p class="text-magenta font-bold mb-6 italic text-xl">30 DÍAS GRATIS</p>
-                    <a href="https://github.com/mke210/mi-tiendita-oax/raw/main/Instalador_PRO.rar" class="block w-full bg-magenta text-white py-4 rounded-lg font-bold btn-hover uppercase shadow-lg mb-4">Descargar Instalador</a>
-                    <a href="https://mpago.la/2AS9kF1" target="_blank" class="block w-full mp-btn text-white py-4 rounded-lg font-bold btn-hover shadow-lg">
-                        <img src="https://http2.mlstatic.com/static/org-img/homesnw/mercado-pago.png?v=2.0" alt="Mercado Pago" class="inline h-6 mr-2 bg-white p-1 rounded"> Pagar Versión PRO
-                    </a>
-                    <p class="mt-4 text-xs text-gray-500 italic">Compatible con Windows 10 e inferiores.</p>
-                </div>
+<section id="demos" class="py-20 bg-gray-900 text-white">
+<div class="container mx-auto px-6 text-center">
+<h2 class="text-4xl font-bold mb-12 uppercase tracking-widest">Descargas y Pago</h2>
+<div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+<div class="bg-white text-gray-800 p-10 rounded-2xl shadow-lg border-4 border-magenta">
+<h3 class="text-2xl font-bold mb-2">Versión PRO</h3>
+<p class="text-magenta font-bold mb-6 italic text-xl">30 DÍAS GRATIS</p>
+<a href="https://github.com/mke210/mi-tiendita-oax/raw/main/Instalador_PRO.rar" class="block w-full bg-magenta text-white py-4 rounded-lg font-bold btn-hover uppercase shadow-lg mb-4">Descargar</a>
+<a href="https://mpago.la/2AS9kF1" target="_blank" class="flex items-center justify-center gap-2 w-full mp text-white py-4 rounded-lg font-bold btn-hover shadow-lg">
+<svg viewBox="0 0 24 24" class="h-7 w-7 bg-white rounded-full p-1"><circle cx="12" cy="12" r="10" fill="#00b1ea"/><path fill="#fff" d="M6 12c0-1.8 1.8-2.8 3.5-2.2 1 .4 1.5 1.2 2.5 2.2 1-1 1.5-1.8 2.5-2.2C16.2 9.2 18 10.2 18 12s-1.8 2.8-3.5 2.2c-1-.4-1.5-1.2-2.5-2.2-1 1-1.5 1.8-2.5 2.2C7.8 14.8 6 13.8 6 12z"/></svg>
+Pagar con Mercado Pago
+</a>
+</div>
+<div class="bg-white text-gray-800 p-10 rounded-2xl shadow-lg border-4 border-gray-400">
+<h3 class="text-2xl font-bold mb-2">Versión Básica</h3>
+<p class="text-gray-600 font-bold mb-6 italic text-xl">IDEAL PARA EMPEZAR</p>
+<a href="https://github.com/mke210/mi-tiendita-oax/raw/main/Instalador_Basico.rar" class="block w-full bg-gray-800 text-white py-4 rounded-lg font-bold btn-hover uppercase shadow-lg mb-4">Descargar</a>
+<a href="https://mpago.la/26HktC5" target="_blank" class="flex items-center justify-center gap-2 w-full mp text-white py-4 rounded-lg font-bold btn-hover shadow-lg">
+<svg viewBox="0 0 24 24" class="h-7 w-7 bg-white rounded-full p-1"><circle cx="12" cy="12" r="10" fill="#00b1ea"/><path fill="#fff" d="M6 12c0-1.8 1.8-2.8 3.5-2.2 1 .4 1.5 1.2 2.5 2.2 1-1 1.5-1.8 2.5-2.2C16.2 9.2 18 10.2 18 12s-1.8 2.8-3.5 2.2c-1-.4-1.5-1.2-2.5-2.2-1 1-1.5 1.8-2.5 2.2C7.8 14.8 6 13.8 6 12z"/></svg>
+Pagar con Mercado Pago
+</a>
+</div>
+</div>
+</div>
+</section>
 
-                <div class="bg-white text-gray-800 p-10 rounded-2xl shadow-lg border-4 border-gray-400">
-                    <h3 class="text-2xl font-bold mb-2">Versión Básica</h3>
-                    <p class="text-gray-600 font-bold mb-6 italic text-xl">IDEAL PARA EMPEZAR</p>
-                    <a href="https://github.com/mke210/mi-tiendita-oax/raw/main/Instalador_Basico.rar" class="block w-full bg-gray-800 text-white py-4 rounded-lg font-bold btn-hover uppercase shadow-lg mb-4">Descargar Instalador</a>
-                    <a href="https://mpago.la/26HktC5" target="_blank" class="block w-full mp-btn text-white py-4 rounded-lg font-bold btn-hover shadow-lg">
-                        <img src="https://http2.mlstatic.com/static/org-img/homesnw/mercado-pago.png?v=2.0" alt="Mercado Pago" class="inline h-6 mr-2 bg-white p-1 rounded"> Pagar Versión Básica
-                    </a>
-                    <p class="mt-4 text-xs text-gray-500 italic">Compatible con Windows 10 e inferiores.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<footer class="bg-white border-t py-12">
+<div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-center md:text-left">
+<h4 class="font-bold text-xl mb-2 italic">Métodos de Pago</h4>
+<p class="text-gray-600 font-bold uppercase">Mercado Pago, Transferencias y OXXO</p>
+</div>
+<a href="https://wa.me/9519231764" target="_blank" class="bg-green-500 text-white px-8 py-4 rounded-full font-bold shadow-xl flex items-center gap-3 btn-hover"><i class="fab fa-whatsapp text-2xl"></i> 951 923 1764</a>
+</div>
+</footer>
 
-    <footer class="bg-white border-t py-12">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-8">
-            <div>
-                <h4 class="font-bold text-xl mb-2 italic">Métodos de Pago</h4>
-                <p class="text-gray-600 font-bold uppercase">Mercado Pago, Transferencias y OXXO</p>
-                <img src="https://http2.mlstatic.com/static/org-img/homesnw/mercado-pago.png?v=2.0" alt="Mercado Pago" class="h-8 mt-2">
-            </div>
-            <div class="flex flex-col items-center md:items-end">
-                <a href="https://wa.me/9519231764" target="_blank" class="bg-green-500 text-white px-8 py-4 rounded-full font-bold shadow-xl flex items-center gap-3 btn-hover">
-                    <i class="fab fa-whatsapp text-2xl"></i> 951 923 1764
-                </a>
-            </div>
-        </div>
-    </footer>
-
-    <a href="https://wa.me/9519231764" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-2xl z-50 hover:bg-green-600 transition">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+<a href="https://wa.me/9519231764" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-2xl z-50"><i class="fab fa-whatsapp"></i></a>
 
 </body>
 </html>
